@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen(){
+    print("Let it go!")
+}
 
 
 
@@ -29,7 +31,10 @@
 
 
 
-
+func frozenAgain(){
+    let phrase = "Let it go"
+    print(phrase)
+}
 
 
 
@@ -39,7 +44,9 @@
 // write your code here
 
 
-
+func getCharacter(name:String){
+    print("My favorite character is \(name)")
+}
 
 
 
@@ -49,7 +56,8 @@
  */
 // write your code here
 
-
+var characterName = "Elsa"
+getCharacter(characterName)
 
 
 
@@ -59,23 +67,18 @@
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
-
-
-
-
-
-
+func getNumber(number:Int){
+    print("I got \(number) problems but Swift ain't one")
+}
 
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
-
-
-
-
-
+func getFaveBand(name:String, number:Int){
+    print("My #\(number) favorite band is \(name)")
+}
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
@@ -95,11 +98,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand("Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: String) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand("Blink-182", position: "42")
 
 
 
@@ -112,8 +115,11 @@
  */
 // write your code here
 
+func madLib(name:String, noun:String, preposition:String){
+    print("To \(noun) and \(preposition), \(name)!")
+}
 
-
+madLib("Woody", noun:"Infinity", preposition: "beyond")
 
 
 
@@ -123,7 +129,9 @@
  */
 // write your code here
 
-
+func toTheRescue()->String{
+    return "Buzz Lightyear to the rescue!"
+}
 
 
 
@@ -133,7 +141,9 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
-
+func returnNumber()->Int{
+    return(100)
+}
 
 
 
@@ -144,8 +154,9 @@
  */
 // write your code here
 
-
-
-
+func uppercaseName(name:String)->String{
+    var name2 = name.uppercaseString
+    return ("To infinity and beyond, \(name2)")
+}
 
 
